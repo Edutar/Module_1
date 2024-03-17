@@ -1,0 +1,191 @@
+
+.carousel {
+    position: relative;
+    font-size: 1px;
+    width: 570em;
+    height: 300em;
+  }
+  .carusel__input{
+    display: none;
+  }
+  .carusel__img{
+     overflow: clip;
+     width: 570em;
+     height: 300em;
+     position: relative;
+  }
+  .carusel__img img{
+    width: 570em;
+    height: 300em;
+    position: absolute;
+    transition: 1s;
+  }
+  
+  .carusel__buttonBack,
+  .carusel__buttonNext {
+    background-color: white;
+    position: absolute;
+    display: block;
+    width: 55em;
+    height: 55em;
+    border-radius: 50%;
+    top: 40%;
+    cursor: pointer;
+    box-shadow: 5rem 10rem 10rem #eeeeee;
+  }
+
+ .carusel__buttonBack::after,
+ .carusel__buttonNext::after {
+    content: "";
+    display: block;
+    width: 40em;
+    height: 40em;
+    position: absolute;
+    top: 7em;
+    left: 7em;
+    background-image: url(..//..//img/back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30em 30em;
+  }
+  .carusel__buttonBack{
+    left: -5%;
+  }
+  .carusel__buttonNext{
+    left: 95%;
+  }
+  .carusel__buttonNext::after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  input[id="input5"]:checked ~ label,
+  input[id="input6"]:checked ~ label,
+  input[id="input4"]:checked ~ label,
+  input[id="input3"]:checked ~ label,
+  input[id="input2"]:checked ~ label,
+  input[id="input1"]:checked ~ label{
+    z-index: 4;
+  }
+  .card{
+    z-index: 5;
+  }
+ 
+
+  input[id="input1"]:checked ~ .carusel__img .carusel__img1{
+    animation: animationRightStart 1s forwards; 
+  }
+  input[id="input1"]:checked ~ .carusel__img .carusel__img3{
+    animation: animationRigtEnd 1s forwards; 
+  }
+  input[id="input2"]:checked ~ .carusel__img .carusel__img2{
+    animation: animationLeftEnd 1s forwards; 
+  }
+  input[id="input2"]:checked ~ .carusel__img .carusel__img1{
+    animation: animationLeftStart 1s forwards; 
+  }
+  input[id="input3"]:checked ~ .carusel__img .carusel__img1{
+    animation: animationRigtEnd 1s forwards; 
+  }
+  input[id="input3"]:checked ~ .carusel__img .carusel__img2{
+    animation: animationRightStart 1s forwards; 
+  }
+  input[id="input4"]:checked ~ .carusel__img .carusel__img2{
+    animation: animationLeftStart 1s forwards; 
+  }
+  input[id="input4"]:checked ~ .carusel__img .carusel__img3{
+    animation: animationLeftEnd 1s forwards; 
+  }
+  input[id="input5"]:checked ~ .carusel__img .carusel__img2{
+    animation: animationRigtEnd 1s forwards; 
+  }
+  input[id="input5"]:checked ~ .carusel__img .carusel__img3{
+    animation: animationRightStart 1s forwards; 
+  }
+  input[id="input6"]:checked ~ .carusel__img .carusel__img3{
+    animation: animationLeftStart 1s forwards; 
+  }
+  input[id="input6"]:checked ~ .carusel__img .carusel__img1{
+    animation: animationLeftEnd 1s forwards; 
+  }
+  input[id="input5"]:checked ~ label .card1{        
+    z-index: 5;
+  }
+  input[id="input6"]:checked ~ label .card{        
+    z-index: 5;
+  }
+  input[id="input4"]:checked ~ label .card2{        
+    z-index: 5;
+  }
+  input[id="input3"]:checked ~ label .card{        
+    z-index: 5;
+  }
+  input[id="input2"]:checked ~ label .card1{        
+    z-index: 5;
+  }
+  input[id="input1"]:checked ~ label .card2{        
+    z-index: 5;
+  }
+  @keyframes animationRightStart {
+    0% {
+        z-index: 3;
+    }
+    1% {
+      transform: translateX(0); /* Начальное положение */
+    }
+    98% {
+      transform: translateX(100%); /* Конечное положение */
+    }
+    99% {
+        z-index: 2;
+    } 
+    100% {
+        z-index: 1;
+    }
+  }
+  @keyframes animationRigtEnd {
+    0%{
+        z-index: 3; 
+        transform: translateX(-100%); /* Начальное положение */
+    }
+    98% {
+      transform: translateX(0); /* Конечное положение */
+    }
+    99%{
+        z-index: 3;
+    }
+    100%{
+        z-index: 2;
+    }
+  }
+  @keyframes animationLeftEnd {
+    0%{
+        z-index: 3;
+        transform: translateX(100%); /* Начальное положение */
+    }
+    98% {
+      transform: translateX(0); /* Конечное положение */
+    }
+    99%{
+        z-index: 3;
+    }
+    100%{
+        z-index: 2;
+    }
+  }
+  @keyframes animationLeftStart {
+    0%{
+        z-index: 3;
+    }
+    1% {
+      transform: translateX(0); /* Начальное положение */
+    }
+    98% {
+      transform: translateX(-100%); /* Конечное положение */
+    }
+    99%{
+        z-index: 2;
+    }
+    100%{
+        z-index: 1;
+    }
+  }

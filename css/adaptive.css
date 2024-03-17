@@ -1,0 +1,236 @@
+@media (max-width: 992px) {
+  .slider {
+    padding-left: 0px;
+    gap: 80px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  form {
+    max-width: 40%;
+    min-width: 40%;
+  }
+  .class-img {
+    background-size: 200% 100%;
+    background-position: 50% 0%;
+  }
+  .about_us {
+    padding: 150px 0px;
+  }
+  .carousel {
+    font-size: 0.6px;
+  }
+  .cards {
+    -ms-flex-preferred-size: 290px;
+        flex-basis: 290px;
+  }
+  .price,
+  .rate {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about {
+    -ms-flex-preferred-size: 1000px;
+        flex-basis: 1000px;
+    max-width: 100%;
+  }
+  .contacts > a {
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+    max-width: 30%;
+  }
+  .block7 {
+    background-image: url(..//..//img/bg-04.jpg);
+    background-position: 100% 100%;
+    background-size: 220% 100%;
+    padding-bottom: 50px;
+  }
+  .prices {
+    padding-top: 50px;
+  }
+  .cards {
+    max-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .conteiner {
+    max-width: 768px;
+  }
+  .menu-mobile__label {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .slider {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 50px 0px 50px 0px;
+    gap: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .slider div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding-top: 30px;
+  }
+  form {
+    min-width: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .our_classes {
+    padding-top: 50px;
+  }
+  .yoga_classes {
+    padding-top: 25px;
+  }
+  .class {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .class:hover {
+    -webkit-box-shadow: 5rem 10rem 10rem #eeeeee;
+            box-shadow: 5rem 10rem 10rem #eeeeee;
+  }
+  .class-img {
+    width: 100%;
+    height: 240px;
+    background-size: 100% 100%;
+    background-position: 50% 0%;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+  }
+  .cards {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+  }
+  .block4 {
+    padding-top: 50px;
+  }
+  .gallery .gallery_hover {
+    display: none;
+  }
+  .gallery .gallery_hover:hover {
+    display: none;
+  }
+  .about_us {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .carousel {
+    font-size: 0.9px;
+  }
+  .features {
+    padding: 50px 0px 50px 0px;
+  }
+  .feature {
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+  }
+  .prices {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cards {
+    max-width: 60%;
+  }
+  .cards:hover {
+    -webkit-box-shadow: 5px 10px 10px #f1f1f1;
+            box-shadow: 5px 10px 10px #f1f1f1;
+  }
+  .prices {
+    padding-top: 50px;
+  }
+  .price,
+  .rate {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  footer {
+    padding-top: 40px;
+  }
+  .block9 {
+    padding-bottom: 30px;
+  }
+  .subfooter {
+    padding: 20px 0px;
+  }
+}
+@media (max-width: 570px) {
+  body {
+    min-width: 320px;
+  }
+  .slider {
+    gap: 0px;
+    padding: 50px 0px 0px 0px;
+  }
+  form {
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  h1 {
+    font-size: 33px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .class {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 60%;
+    min-width: 290px;
+  }
+  .carousel {
+    font-size: 0.45px;
+  }
+  .carusel__buttonBack,
+  .carusel__buttonNext {
+    font-size: 0.6px;
+  }
+  .feature {
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+  }
+  .cards {
+    max-width: 100%;
+    min-width: 290px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .price {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .price,
+  .rate {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
